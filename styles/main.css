@@ -1,6 +1,7 @@
 body{
+    
 
-        background-image: linear-gradient(to bottom right, #C7D5ED 5%, #FFCEAD 15%, #867AE9 80%);
+        background-image: linear-gradient(to bottom right,#867AE9 10%, blue 90%);
         font-family: 'Open Sans', sans-serif;
         margin: 0;
             }
@@ -24,8 +25,9 @@ a:hover{
     color: cornflowerblue;
 }
 
-.nav{
 
+
+.nav{
 border-radius: 10px;
 border: white;
 border-style: solid;
@@ -33,20 +35,23 @@ border-width: 15px;
 height: 160px;
 font-size: 100px;
 text-align: left; 
-color: #867AE9;
-margin: 15 15 15 15;
+color: white;
+margin: 15px 70px 15px 70px;
 padding-left: 15px;
 font-family: 'Shadows Into Light', cursive;
-
 }
 
+.nav a:visited{
+    color: white;
+}
+
+.nav a{text-decoration: none;}
 
 .section{
-
     border-radius: 10px;
-    height: 200px;
+    height: 15rem;
     background-color: #A5E1AD;
-    margin: 50 15 0 15 ;
+    margin: 50px 70px 0px 70px ;
     padding: 0 0 0 0;
     
 }
@@ -62,7 +67,7 @@ font-family: 'Shadows Into Light', cursive;
 .sprints{
     font-size: 30px;
     text-decoration: underline;
-    margin: 0 10 0 10;
+    margin: 0 10px 0 10px;
     margin-top: 50px;
     color: black;
 
@@ -71,9 +76,36 @@ font-family: 'Shadows Into Light', cursive;
 
 .sprints-section{
     text-align: center;
-    padding: 50 0 0 0;
+    padding: 50px 0px 0px 0px;
     
 }
 
 
+.tasks{
+    font-size: 20px;
+    text-decoration: underline;
+    margin: 50px 10px 0px 10px;
+    color: black;
+    text-align: center;
+}
 
+
+.task-data{
+    text-align: left;
+    padding: 50px 30px 0px 30px;
+    
+}
+
+.task-section{
+    height: 30rem;
+}
+
+
+.html-css-body{
+    margin: 0px 70px 0px 70px;
+    padding: 10px 20px 10px 20px;
+    background-color: #A5E1AD;
+    border-radius: 10px;
+
+
+}
