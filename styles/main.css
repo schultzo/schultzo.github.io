@@ -1,6 +1,4 @@
 body{
-    
-
         background-image: linear-gradient(to bottom right,#867AE9 10%, blue 90%);
         font-family: 'Open Sans', sans-serif;
         margin: 0;
@@ -20,12 +18,28 @@ hr{
     margin: 0 0 0 0;
 }
 
+nav{
+    margin: 25px 0 0 0;
+    padding: 5px 0 5px 0;
+    background-color: #867AE9;
+    text-align: center;
+}
 
 a:hover{
     color: cornflowerblue;
 }
 
+.nav-item{
+    text-align: center;
+    margin: 0px 40px 0px 40px;
+    padding: 0px 30px 0px 30px;
+    text-decoration: none;
+    background-color: rgb(53, 53, 173);
+    color: white;
+    font-size: 30px;
+    border-radius: 5px;
 
+}
 
 .nav{
 border-radius: 10px;
@@ -36,8 +50,9 @@ height: 160px;
 font-size: 100px;
 text-align: left; 
 color: white;
-margin: 15px 70px 15px 70px;
-padding-left: 15px;
+margin:15px 700px 15px 15px;
+padding: 0 30px 0 15px;
+display:inline;
 font-family: 'Shadows Into Light', cursive;
 }
 
@@ -51,7 +66,7 @@ font-family: 'Shadows Into Light', cursive;
     border-radius: 10px;
     height: 15rem;
     background-color: #A5E1AD;
-    margin: 50px 70px 0px 70px ;
+    margin: 50px 15px 0px 15px ;
     padding: 0 0 0 0;
     
 }
@@ -62,22 +77,6 @@ font-family: 'Shadows Into Light', cursive;
     color: #867AE9;
     text-align: center;
     letter-spacing: 1.5rem;
-}
-
-.sprints{
-    font-size: 30px;
-    text-decoration: underline;
-    margin: 0 10px 0 10px;
-    margin-top: 50px;
-    color: black;
-
-
-}
-
-.sprints-section{
-    text-align: center;
-    padding: 50px 0px 0px 0px;
-    
 }
 
 
@@ -101,11 +100,69 @@ font-family: 'Shadows Into Light', cursive;
 }
 
 
-.html-css-body{
-    margin: 0px 70px 0px 70px;
+
+
+ /*Learning Plan CSS */
+
+
+  /*html-ccs.html CSS */
+
+  .html-css-body{
+    margin: 15px 15px 0px 15px;
     padding: 10px 20px 10px 20px;
     background-color: #A5E1AD;
     border-radius: 10px;
+}
 
+strong{
+    color: red;
+    font-weight: bold;
+}
+
+
+.absolute-div{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    display:inline-block;
+    position: absolute;
+    left: 500px;
+
+    
+}
+
+.fixed-div{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    display:inline-block;
+    position: fixed;
+    right: 0px;
+    bottom: 0px;
 
 }
+
+.relative-div{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    display:inline-block;
+    position: relative;
+    left: 210px;
+}
+
+.extra-div{
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    display:inline-block;
+    
+
+}
+
+  /*identity-values.html CSS */
+
+  .identity-body{
+      height: auto;
+      padding: 15px 15px 15px 15px;
+  }

@@ -16,15 +16,21 @@
 
     <div class="nav">
         <a href="index.html">OLIVIAS BLOG...</a>
-        
-      </div>
+    </div>
 
-      <div class="html-css-body"> 
+    <nav>
+        <a class="nav-item" href="index.html">Home</a>
+        <a class="nav-item" href="index.html">About Me</a>
+        <a class="nav-item" href="https://github.com/schultzo?tab=repositories" target="_blank">Git Hub</a>
+        <a class="nav-item" href="https://github.com/schultzo/reflections" target="_blank">Reflections</a>
+    </nav>
   
-
+  
+    <div class="html-css-body"> 
+  
     <h1>What are the differences between relative, absolute, and fixed positioning? </h1>
 
-    <p>Overall there are 5 different positioning values for the "Position" property.
+    <p>Overall, there are 5 different positioning values for the "Position" property.
         <ul>
             <li>static</li>
             <li>relative</li>
@@ -41,26 +47,68 @@
     <p>In the world of web everything is made up of containers which are positioned on a screen which is displayed 
         to the user. Out of the box the way these containers are layed out depends on the order in which you write your
         code using the default styling for each tag. For a better experience we may want certain elements to display 
-        in ways that are the default positioning. This is when we can use the "Position" property in CSS to explicitly
+        in ways that are not the default positioning. This is when we can use the "Position" property in CSS to explicitly
         state how we want the element to positioned on the screen.
     </p>
 
-    <h2>Fixed</h2>
-
-
+    
     <h2>Relative</h2>
     <p>When something has position:relative it will be positioned relative to where it would be positioned 
        if no explicit positioning was applied. The effect on the other elements is that it will leave a space where
-       that element used to be </p>
+       that element used to be.
+
+       <strong>IMPORTANT</strong> If you do not also add other positioning values such as left, right, bottom or top 
+       <strong>nothing will happen</strong>
+
+       In the example below there are 3 divs. The red one has the position as relative and I specified left:210px; to move it 
+       210px from where it had been (in between the 2 blue squares). Where it originally would have been is now empty but 
+       other elements have not repositioned themselves to fill in the gap.
+    </p>
+
+
+    <div class="extra-div"></div>
+    <div class="relative-div"></div>
+    <div class="extra-div"></div>
+
+
+
+
+
 
 
     <h2>Absolute</h2>
-    <p>it ABSOLUTELY must be positioned exactly as the developer as stated. If the developer writes: left:200px; that 
-        item must be 200px away from the left regardless of how it would be otherwise positioned. The effect on the other 
-        elements is though the absolute positioned element was never there. 
+    <p>it ABSOLUTELY must be positioned exactly as the developer as stated relative to the last positioned element. If the
+         developer writes: left:200px; that item must be 200px away from the left regardless of how it would be otherwise
+         positioned. The effect on the other  elements is though the absolute positioned element was never there. 
     </p>
 
+    <div class="extra-div"></div>
+    <div class="absolute-div"></div>    
+    <div class="extra-div"></div>
+
+
+
+    <h2>Fixed</h2>
+
+    Elements with position:fixed it means that they are stuck somewhere on the users screen - even when they scroll down 
+    a page. In the bottom right hand corner of your screen you should see a red square. I have set the values right:0px and bottom: 0px
+    to ensure it stays FIXED at the bottom right hand corner of your screen. 
+    
+    I could see this being useful for navigation if you want the user to always be able to access navigation even if they
+    are far down your page or a chat pop up that stays with the user as they navigate through.   <br> <br>
+
+
+    <div class="extra-div"></div>
+    <div class="fixed-div"></div>
+    <div class="extra-div"></div>
+
+
+
+
+
 </div>
+
+
     
 </body>
 </html>
