@@ -27,8 +27,8 @@
 
       
     <div class="section page-body">
-        <h1>What is javascript?</h1>
-            <p>Javascript is ACTION, it allows a website to be more interactive and dynamically change. It can change the CSS and HTML 
+        <h1>What is JavaScript?</h1>
+            <p>JavaScript is ACTION, it allows a website to be more interactive and dynamically change. It can change the CSS and HTML 
         allowing what is display to user a change based on input or certain action on the site. Using the analogy of a car the Javascript
         is the engine. The HTML provides the stucture and defines the number of seats, how many lights, how many windows whilst the 
         CSS determines how all of those elements are styled on the car e.g. 2 in the front, 3 in back with colour of them being black.
@@ -149,16 +149,22 @@
         </h1>
 
         <h2>Arrays</h2>
-        <p>An array is a list of different values.  </p>
+        <p>An array is a list of different values stored in a single variable. The values can be numbers, strings or even objects
+            which are described below. </p>
+
+        <i>Note: The first item in an array will always be at position 0</i>
 
         <pre>
             <code>
 
                 var myArray = [];
 
-                myArray.push("new array item");
+                myArray[0]; //Accesses the <strong>first</strong>  item in the array
 
-                myArray[0]; //Accesses the first item in the array
+                myArray.push("Value"); //Adds new item "Value" to <strong>end</strong> of the array 
+
+                myArray.pop(); //Removes the <strong>last</strong> value off the end of the array
+
         
 
             
@@ -169,7 +175,9 @@
 
 
         <h2>Objects</h2>
-        <p>An object is a grouping of attributes which relate to a single "thing" </p>
+        <p>An object is a grouping of attributes which relate to a single "thing". All of these attributes have a key and value.
+            Objects can have an attribute with a value that is an array (described above).
+        </p>
 
         <pre>
             <code>
@@ -188,6 +196,11 @@
                     activities: ["swimming", "running", "biking", ]
                 };
 
+
+                object.name; //returns "value"
+                object['name'] //returns "value"
+                object.name = "new value" //changes the value of the name attribute on the object to "new value"
+
             </code>
         </pre> 
 
@@ -195,7 +208,12 @@
         <h2>What is the DOM and Dev Tools</h2>
         <p>The Document Object Model is a family tree like representation of the HTML elements on a page. HTML elements
             can be nested inside one another which the DOM sees as a child of that element. E.g. The H1 tag in the below example
-            is nested inside of the body tag. The DOM sees the H1 as a child of body.
+            is nested inside of the body tag. The DOM sees the H1 as a child of body. Dev tools in chrome allow us to visually 
+            see the elements on a page and has a range of web developer tools that are built directly into the browser. This is great
+            for testing code changes on the fly rather than having to open your code in a text editor. It also allows for some "behind the scenes"
+            of how the website is performing. DevTools works with the DOM by enabling us to manipulate the DOM on the fly and see what different
+            changes could look like. 
+
 
             <pre>
                 <code>
