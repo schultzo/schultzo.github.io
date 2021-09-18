@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positioning Values</title>
+    <link href="styles/main.css" rel="stylesheet" type="text/css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Javascript</title>
+</head>
+<body>
+    <div class="nav">
+        <a href="index.html">OLIVIAS BLOG...</a>
+      </div>
+  
+      <nav>
+        <a class="nav-item" href="index.html">Home</a>
+        <a class="nav-item" href="index.html">About Me</a>
+        <a class="nav-item" href="https://github.com/schultzo?tab=repositories" target="_blank">Git Hub</a>
+        <a class="nav-item" href="https://github.com/schultzo/reflections" target="_blank">Reflections</a>
+
+      </nav>
+
+      
+    <div class="section page-body">
+        <h1>What is javascript?</h1>
+            <p>Javascript is ACTION, it allows a website to be more interactive and dynamically change. It can change the CSS and HTML 
+        allowing what is display to user a change based on input or certain action on the site. Using the analogy of a car the Javascript
+        is the engine. The HTML provides the stucture and defines the number of seats, how many lights, how many windows whilst the 
+        CSS determines how all of those elements are styled on the car e.g. 2 in the front, 3 in back with colour of them being black.
+        CSS my define the windows to be closed. Then when Javascript comes along it provides the action which causes windows to go up,
+        the car to move when accelertor is pushed and other actions which makes a car functional. In a magical world it would also turn
+        the car seats a different colour! 
+            </p>
+
+        <h1><i> WHAT THE FU</i> nction?!!!</h1>
+
+            <p>A function is a chunk of javascript code which can be reused by wrapping it in a function. This allows you to just "call" that function
+                instead of rewriting all the code again! 
+            </p>
+    
+    
+            <h3>Declaring a function</h3>
+            <p>First thing you need to do is "delcare" the function. This gives it a name that you will use to call it (use it) 
+                later on. Inside the curly brackets {} you will write the code you want to run when the function is called. You
+                can also "pass" it variables which allow for the outcome of the function to be different depending on the variable/s
+                passed.
+    
+            </p>
+            <pre>
+                <code>
+                    function myFunction(myVariable){
+                        alert("You have run myFunction!" + myVariable);
+                    }
+    
+                </code>
+            </pre> 
+
+    
+            <h3>Calling a function</h3>
+            <p>Throughout your application you may want to use that code you wrote previously when you "declared" your function.
+                Because you did this you do not need to write all the "doing" code again, instead you just have to remember what
+                you named it as and write that. With the below example if you had declared it as per above
+            </p>
+            <pre>
+                <code>
+                    myFunction("Fantastic!");   
+                </code>
+            </pre>   
+
+
+            <p>The above code would display something like this!</p>
+            <img src="images/alert.png" alt="picture of alert example">
+
+        <h1>Control flow - what's that?!</h1>
+            <p>Control flow is the order in which the code you write is executed. The order in which you write things matters and 
+            if written in the wrong way can cause an outcome which you didn't expect or want!
+
+            <h2>GOOD</h2>  
+            In the below example I want to fill up my petrol tank only when it's empty because what a waste of time trying to fill up
+            an already full tank<br>
+            Below we can see that <i> fillUpPetrol </i> is called and run INSIDE the if statement to check to see if petrolTank is empty 
+            and results in the car to only be filled up if the tank is empty. <br>
+
+            <pre>
+                <code>
+                    var petrolTank = "empty"; <br>
+
+                    function fillUpPetrol(){<br>
+                        petrolTank = "full";<br>
+                        console.log( "Petrol has been filled");
+                    }<br>
+        
+                    
+                    if (petrolTank == "empty"){<br>
+                        fillUpPetrol();<br>
+                    }
+  
+                </code>
+              </pre>
+            
+
+
+            <h2>BAD</h2>
+            In the below example fillUpPetrol is called and run before the if statement to check if the the petrol tank 
+            is empty! Because it is done before we will always be trying to fill up a tank that's already full. <br>
+
+
+            <pre>
+                <code>
+                    var petrolTank = "empty";<br>
+
+                    function fillUpPetrol(){<br>
+                        petrolTank = "full";<br>
+                        return "Petrol has been filled";
+                    }<br>
+        
+                    fillUpPetrol();<br>
+        
+                    if (petrolTank == "empty"){<br>
+                        alert("Your tank is empty");
+                    }<br>
+                </code>
+              </pre>
+
+            
+
+        </p>
+
+        <h1>Where is Javascript written</h1>
+             <p>Similar to CSS you can have an external js file which is linked to your HTML or you can have it in the page. If you link 
+                your HTML to an external javascript file best practice is to put it at the end of the file. (Just before the closing body
+                tag). The reason for this is because of the way the browser reads your file (from top to bottom). If script tag is in the 
+                head then when  your browser loads the HTML file it will wait until the JS file is loaded until continuing to process rest 
+                of your HTMl.This could cause issues if your javascript does something on load to an element that has not yet been created 
+                as broswer has not read that part of the document yet. Also, if your Javascript file is really complex it may affect the 
+                load time of the page causing a worse user experience.
+            </p>
+
+
+
+    
+
+        <h1>Explain the difference between accessing data from arrays and objects.
+        </h1>
+
+        <h2>Arrays</h2>
+        <p>An array is a list of different values.  </p>
+
+        <pre>
+            <code>
+
+                var myArray = [];
+
+                myArray.push("new array item");
+
+                myArray[0]; //Accesses the first item in the array
+        
+
+            
+
+
+            </code>
+        </pre>  
+
+
+        <h2>Objects</h2>
+        <p>An object is a grouping of attributes which relate to a single "thing" </p>
+
+        <pre>
+            <code>
+
+                var object = {
+                    name: "value",
+                    age: 12,
+                    color: "blue",
+                };
+
+
+                var objectWithArray = {
+                    name: "value",
+                    age: 12,
+                    color: "blue",
+                    activities: ["swimming", "running", "biking", ]
+                };
+
+            </code>
+        </pre> 
+
+
+        <h2>What is the DOM and Dev Tools</h2>
+        <p>The Document Object Model is a family tree like representation of the HTML elements on a page. HTML elements
+            can be nested inside one another which the DOM sees as a child of that element. E.g. The H1 tag in the below example
+            is nested inside of the body tag. The DOM sees the H1 as a child of body.
+
+            <pre>
+                <code>
+                    &lt;body&gt;
+                    &lt;h1&gt;
+                    &lt;/h1&gt;
+                    &lt;/body&gt;  
+                </code>
+            </pre>  
+
+        </p>
+
+
+
+
+
+
+
+
+</div>
+</body>
+</html>

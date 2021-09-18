@@ -186,3 +186,19 @@ strong{
 
  /*Learning Plan CSS */
 
+
+ /* eqiq.html CSS */
+
+ .scenario-section{
+    border-style: solid;     
+    border-color: black;
+    text-align: center;
+    padding: 0px 30px 15px 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+ }
+
+ .EQ-IQ-Heading{
+text-align: center;
+ }
+
