@@ -30,12 +30,90 @@
         <h1>Problem Solving</h1>
 
 
+        <h2>Pseudocode</h2>
+        <p>For more complex programming tasks Pseudocode can really help to make sure what you are trying to achieve is clear in your mind
+           and you understand the problem you are trying solve. It is written in plain english each step you are trying to achieve. In the video 
+           I watched they mentioned that as you become more familiar with the language you are writing the code in you can start to complete the 
+           Pseudocode in the coding language</p>
+
+
 
         <h2>Code Readability</h2>
-        <p>https://www.youtube.com/watch?v=SPlS4kW0UbE - line length 45-90 characters, try and write code that 
-          doesn't require a comment. Generic names that shouldnt be used in variable/function names as they are ambiguous
-          check, validate, make, get/set, process, start. Try and align with the way that existing code is already written.
+        <p>I watched a useful video called "Writing Readable Code" which described some helpful tips to make your code more readable when future you
+          or someone else on the same project needs to figure out what's going on.
         </p>
+        <ul>
+          <li>Keep the line length 45-90 characters long - be mindful that different people have different set ups and while it might be easy to read on 
+            your large work screen, someone else may use a much smaller screen and find it difficult to follow along.
+          </li>
+          <li>Try and write code that doesn't require a comment - by having the goal of your code not requiring a coment you strive to make it as naturally 
+            readable as possible
+          </li>
+          <li>The following words are generic words that shouldnt be used in variable/function names as they are ambiguous - <i> check, validate, make, get/set, process, start </i></li>
+          <li>Try and align with the way that existing code is already written - Generally you will be working on projects with other people, and with an existing code base. 
+            By seeking to understand the way the code is currently written you can help to ensure consistency going forward.
+          </li>  
+        </ul>
+
+
+
+        <h2>Console Log</h2>
+
+        <p>Console log is great for determining what the value of variables are throughout your code when the value is changed by what your code does. It can help to narrow
+          down where in the code the issue is if the output of the variable is not what your expect
+        </p>
+        
+
+          <h3>Code Example</h3>
+
+
+          <pre>
+            <code>
+              console.log(variableName)
+            </code>
+          </pre>
+
+
+
+        <h3>Output Example</h3>
+        
+
+        <img class="console-log-example" src="images/consolelogexample.png" alt="Console Log Example">
+
+        
+
+        <h2>Testing</h2>
+
+        <h3>Test Driven Development</h3>
+        <p>With Test Driven Development (TDD) you write a test for your code before you even write it. In the video "Problem-Solving for Developers" the described the process as:
+          Write a test that describes the expected output of the test. Write a failing test, implement code that pasts the test then optimise
+          your code.
+        </p>
+
+        <ol>
+          <li>Write a test that checks the expected output of the test vs an actual output</li>
+          <li>Write a failing test - this allows you think differently about the problem and ensure you understand it correctly</li>
+          <li>Implement the code to pass the test</li>
+          <li>Optimise your code - make it more efficent, increase code readability</li>
+        </ol>
+
+        <h2>Example of when I used problem solving</h2>
+        <p>In the katas this sprint I got stuck on the gradebook exercise. I struggled to get the test to pass for the average of value Joseph. I initially used console logging
+          to try and see what values were being outputted as a result of my code. The code was returning back what I was expecting, I was stuck on it for hours and then decided 
+          to post on the slack channel. I then realised maybe my understanding of the task was incorrect and it was at that point I realised I was writing the code for the test after 
+          the one i was supposed to be working on.</p>
+
+
+        <h2>Confidence levels</h2>
+        <p>The katas have shown me the importance of understanding the problem first before coding it as there was a couple times where I interpreted the issue differently from what 
+          I was required to do. I am confident in using console logging to narrow down where in the code it is not working
+        </p>
+
+        <h2>Resources</h2>
+        <ul>
+          <li><a href="https://www.youtube.com/watch?v=UFc-RPbq8kg">Problem-Solving for Developers - A Beginner's Guide</a></li>
+          <li><a href="https://www.youtube.com/watch?v=SPlS4kW0UbE">Writing Readable Code</a></li>
+        </ul>
 
 
 
